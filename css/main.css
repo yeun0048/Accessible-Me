@@ -1,0 +1,128 @@
+body {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  background-color: #f5f5f5; /* lighter background for readability */
+  color: #222; /* strong contrast text */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
+  color: #111; /* darker headings for contrast */
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+img {
+  width: 100%;
+  height: auto; /* preserves aspect ratio */
+}
+
+/* Navigation */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav ul li {
+  flex: 1;
+  text-align: center;
+}
+
+.main-nav ul li a {
+  display: block;
+  color: #0055cc; /* accessible link color */
+  text-decoration: none;
+  font-size: 1.25rem;
+  padding: 0.75rem;
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a:focus {
+  text-decoration: underline;
+  outline: 2px solid #000; /* visible focus */
+  outline-offset: 2px;
+}
+
+/* Form styles */
+form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #444;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #0055cc;
+  outline: 3px solid #0055cc; /* clear focus */
+}
+
+form textarea {
+  min-height: 150px;
+  max-height: 150px;
+  resize: none;
+}
+
+form button {
+  background: #0055cc; /* solid background for contrast */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button:hover,
+form button:focus {
+  background: #003d99;
+  outline: 3px solid #000;
+}
+
+/* Skip links */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  z-index: 100;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* Footer */
+.site-footer {
+  background: #222;
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}

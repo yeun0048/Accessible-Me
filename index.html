@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/WebPage">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jam Box Studios - Accessible</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Stick+No+Bills:wght@300&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <!-- Skip Links -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a class="skip-link" href="#site-footer">Skip to footer</a>
+
+  <div class="container">
+    <!-- Header -->
+    <header class="site-header" role="banner" itemscope itemtype="https://schema.org/WPHeader">
+      <h1 itemprop="headline">Jam Box Studios</h1>
+
+      <!-- Navigation -->
+      <nav class="main-nav" role="navigation" aria-label="Main Navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+        <ul>
+          <li><a href="#" itemprop="url">Home</a></li>
+          <li><a href="#" itemprop="url">Products</a></li>
+          <li><a href="#" itemprop="url">Reservation</a></li>
+          <li><a href="#" itemprop="url">Studio</a></li>
+        </ul>
+      </nav>
+
+      <img src="https://placekitten.com/1200/900" alt="Studio banner with instruments" class="banner" itemprop="image">
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="main-content" role="main" itemscope itemtype="https://schema.org/Article">
+      <article>
+        <h2 itemprop="headline">Welcome to Jam Box</h2>
+        <p itemprop="articleBody">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
+      </article>
+
+      <!-- Owner Info -->
+      <section class="owner" aria-labelledby="owner-heading">
+        <h2 id="owner-heading">Meet the Owner</h2>
+        <ul>
+          <li><strong>Name:</strong> John Doe</li>
+          <li><strong>Title:</strong> CEO</li>
+          <li><strong>Email:</strong> <a href="mailto:johnjoe@jambox.ca">johnjoe@jambox.ca</a></li>
+          <li><strong>Phone:</strong> <a href="tel:16130000000">613-000-0000</a></li>
+        </ul>
+      </section>
+
+      <!-- Address -->
+      <section class="address" aria-labelledby="address-heading" itemscope itemtype="https://schema.org/PostalAddress">
+        <h2 id="address-heading">Address</h2>
+        <p>
+          <span itemprop="streetAddress">123 Guitar Road</span>,  
+          <span itemprop="addressLocality">Musicville</span>,  
+          <span itemprop="addressRegion">Danceistan</span>,  
+          <span itemprop="postalCode">B3T 0L0</span>
+        </p>
+      </section>
+
+      <!-- Contact -->
+      <section class="contact-section" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact Us</h2>
+        <form action="thanks.html" role="form" aria-label="Contact Form">
+          <label for="name">Full Name</label>
+          <input id="name" type="text" name="name" placeholder="Full Name" required>
+
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" placeholder="Email" required>
+
+          <label for="subject">Subject</label>
+          <input id="subject" type="text" name="subject" placeholder="Subject">
+
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="site-footer" class="site-footer" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
+      <p>&copy; <span itemprop="copyrightYear">2025</span> 
+        <span itemprop="copyrightHolder">Jam Box Studios</span>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
